@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>디자인 리서치: AX B2B 슬랙 에이전트 랜딩페이지</title>
+    <style>
+      :root {
+        --brand: #0e4274;
+        --ink: #101820;
+        --muted: #536271;
+        --line: #d9e1e8;
+        --soft: #eef6fc;
+        --warm: #f6f2ea;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "Malgun Gothic", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        margin: 0 auto;
+        max-width: 980px;
+        padding: 56px 24px 80px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.15;
+      }
+
+      h1 {
+        color: var(--brand);
+        font-size: 42px;
+        margin: 0 0 24px;
+      }
+
+      h2 {
+        border-top: 1px solid var(--line);
+        font-size: 28px;
+        margin: 44px 0 16px;
+        padding-top: 30px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 17px;
+      }
+
+      a {
+        color: var(--brand);
+      }
+
+      .callout {
+        background: var(--soft);
+        border: 1px solid #cce2f2;
+        border-radius: 8px;
+        padding: 20px 22px;
+      }
+
+      .callout p {
+        margin: 0;
+      }
+
+      pre {
+        background: #101820;
+        border-radius: 8px;
+        color: #f8fafc;
+        overflow-x: auto;
+        padding: 18px;
+      }
+
+      figure {
+        margin: 28px 0;
+      }
+
+      img {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 18px 48px rgba(16, 24, 32, 0.12);
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      figcaption {
+        color: var(--muted);
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      ul,
+      ol {
+        padding-left: 24px;
+      }
+
+      .source-list {
+        background: var(--warm);
+        border-radius: 8px;
+        padding: 18px 22px;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 36px 18px 64px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>디자인 리서치: AX B2B 슬랙 에이전트 랜딩페이지</h1>
+
+      <h2>요약</h2>
+      <div class="callout">
+        <p>
+          Reliever는 일반적인 AI 컨설팅 회사처럼 보이기보다, 안전한
+          엔지니어링 인텔리전스 제품처럼 보여야 합니다. 가장 강한
+          레퍼런스들은 실제 제품 화면을 먼저 보여주고, 통합, 권한 기반
+          보안, 엔터프라이즈 배포 방식을 빠르게 증명합니다.
+        </p>
+      </div>
+
+      <h2>권장 방향</h2>
+      <ol>
+        <li>
+          <strong>슬랙 안에서 답하는 제품 순간을 첫 화면에 배치합니다.</strong>
+          레포지토리 질문에 답하는 장면이 제품 가치를 가장 직접적으로
+          설명합니다.
+        </li>
+        <li>
+          <strong>히어로 바로 아래에 통합 시스템을 노출합니다.</strong>
+          Slack, GitHub, GitLab, Jira, Linear, 문서 시스템을 초반에 보여줘야
+          합니다.
+        </li>
+        <li>
+          <strong>보안을 전환 섹션으로 다룹니다.</strong> 읽기 전용 접근,
+          권한 인지 답변, 출처, 감사 가능성을 구매자가 바로 확인해야 합니다.
+        </li>
+        <li>
+          <strong>낮은 위험의 파일럿 구조를 제시합니다.</strong> 진단,
+          파일럿, 확장 흐름이 B2B AX 서비스에 잘 맞습니다.
+        </li>
+      </ol>
+
+      <pre>+------------------------------------------------------+
+| 기업 코드베이스를 이해하는 슬랙 기반 인텔리전스.      |
+| [데모 문의] [배포 방식 보기]                          |
+|                                                      |
+|  # 엔지니어링-릴리스                                 |
+|  질: 결제 마이그레이션 영향 서비스는?                |
+|  답: invoice-api, plans-worker, ledger-sync...       |
++------------------------------------------------------+</pre>
+
+      <h2>주요 레퍼런스</h2>
+      <figure>
+        <img src="references/glean-agent-builder.png" alt="Glean Agent Builder 랜딩페이지" />
+        <figcaption>
+          Glean Agent Builder - 엔터프라이즈 에이전트 빌더 포지셔닝, 안전한
+          커넥터, 워크플로 자동화, 데모 중심 전환 버튼 참고. [Lazyweb]
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="references/slack-ai.png" alt="Slack AI 랜딩페이지" />
+        <figcaption>
+          Slack AI - 사용자가 이미 일하는 워크스페이스 안에서 AI 기능을
+          보여주는 방식 참고. [Lazyweb]
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="references/github-ai.png" alt="GitHub AI 랜딩페이지" />
+        <figcaption>
+          GitHub AI - 코드베이스 중심 AI 포지셔닝과 개발자 워크플로 신뢰도
+          표현 참고. [Lazyweb]
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="references/workday-ai-agents.png" alt="Workday AI Agents 랜딩페이지" />
+        <figcaption>
+          Workday AI Agents - 엔터프라이즈 에이전트 스토리텔링, 사용 사례,
+          자주 묻는 질문, 세일즈 전환 구조 참고. [Lazyweb]
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="references/linear-ai-agents.png" alt="Linear AI 에이전트 랜딩페이지" />
+        <figcaption>
+          Linear - 엔지니어링 대상 톤, 제품 UI 중심 구성, AI 에이전트 워크플로
+          표현 참고. [Lazyweb]
+        </figcaption>
+      </figure>
+
+      <h2>공통 패턴</h2>
+      <ul>
+        <li>제품 UI가 초반에 등장합니다.</li>
+        <li>커넥터 언어가 구체적입니다.</li>
+        <li>보안은 구매자가 바로 볼 수 있는 영역에서 설명됩니다.</li>
+        <li>전환 버튼은 데모 문의와 제품 탐색 경로로 나뉩니다.</li>
+        <li>구체적인 제품 역할을 먼저 보여준 뒤 AI 전환 메시지를 확장합니다.</li>
+      </ul>
+
+      <h2>피해야 할 패턴</h2>
+      <ul>
+        <li>제품 화면 없이 추상적인 AI 컨설팅 문구만 반복하는 구성.</li>
+        <li>Slack, 레포지토리, 워크플로를 보여주지 않는 장식용 비주얼.</li>
+        <li>통제와 검토 경로를 설명하기 전에 자율 에이전트만 강조하는 메시지.</li>
+        <li>레포지토리 보안을 자주 묻는 질문이나 푸터에 늦게 배치하는 구조.</li>
+      </ul>
+
+      <h2>Reliever만의 각도</h2>
+      <ul>
+        <li>슬랙을 명령 인터페이스로 사용합니다.</li>
+        <li>레포지토리 인텔리전스를 AX 근거로 전환합니다.</li>
+        <li>파일럿 우선 서비스 설계로 구매 리스크를 낮춥니다.</li>
+        <li>파일 출처, 오너, 신뢰도 신호를 핵심 제품 비주얼로 사용합니다.</li>
+      </ul>
+
+      <h2>리서치 결과</h2>
+      <p>
+        Lazyweb에서 가장 적합한 결과는 Glean Agent Builder, Slack AI, GitHub
+        AI, Workday AI Agents, Linear였습니다. 이 레퍼런스들은 공통적으로
+        추상적인 브랜드 메시지보다 제품 근거를 먼저 보여줍니다.
+      </p>
+      <p>
+        웹 리서치에서도 같은 패턴이 확인되었습니다. Glean은 엔터프라이즈
+        맥락, 안전한 커넥터, 권한 기반 거버넌스를 강조합니다. Slack은 기존
+        슬랙 워크플로 안에서 작동하고 접근 경계를 지키는 AI를 강조합니다.
+      </p>
+
+      <h2>출처</h2>
+      <div class="source-list">
+        <p>Lazyweb 데스크톱 스크린샷 검색: Glean Agent Builder, Slack AI, GitHub AI, Workday AI Agents, Linear.</p>
+        <p><a href="https://www.glean.com/product/agent-builder">Glean Agent Builder</a></p>
+        <p><a href="https://www.glean.com/product/ai-agents">Glean AI Agents</a></p>
+        <p><a href="https://slack.com/features/ai">Slack AI</a></p>
+        <p><a href="https://slack.com/features/enterprise-search">Slack 엔터프라이즈 검색</a></p>
+        <p><a href="https://slack.com/intl/en-gb/help/articles/28310650165907-Security-for-AI-features-in-Slack">Slack AI 보안 도움말</a></p>
+        <p><a href="https://github.com/features/ai">GitHub AI</a></p>
+      </div>
+    </main>
+  </body>
+</html>
