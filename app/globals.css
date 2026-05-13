@@ -41,6 +41,10 @@ a {
     text-decoration: none;
 }
 
+main {
+    overflow-x: clip;
+}
+
 .text-line {
     display: block;
 }
@@ -144,6 +148,7 @@ a {
 .hero-content {
     max-width: 760px;
     position: relative;
+    width: min(100%, 760px);
     z-index: 2;
 }
 
@@ -200,7 +205,7 @@ a {
     bottom: 36px;
     display: grid;
     gap: 18px;
-    grid-template-columns: minmax(340px, 560px);
+    grid-template-columns: minmax(0, 560px);
     position: absolute;
     right: 80px;
     width: min(48vw, 620px);
@@ -382,8 +387,16 @@ a {
     align-items: center;
     display: grid;
     gap: 46px;
-    grid-template-columns: minmax(360px, 1.15fr) minmax(300px, 0.85fr);
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
     padding: 84px 80px 36px;
+}
+
+.asset-showcase > *,
+.intro-section > *,
+.workflow-section > *,
+.questions-section > *,
+.security-band > * {
+    min-width: 0;
 }
 
 .asset-showcase img {
@@ -579,7 +592,13 @@ a {
 }
 
 @media (max-width: 1100px) {
+    .site-header {
+        padding: 0 48px;
+    }
+
     .hero {
+        padding-left: 48px;
+        padding-right: 48px;
         padding-top: 76px;
     }
 
@@ -589,8 +608,8 @@ a {
 
     .hero-visual {
         opacity: 0.38;
-        right: -80px;
-        width: 620px;
+        right: 24px;
+        width: min(46vw, 540px);
     }
 
     .capability-grid {
@@ -615,23 +634,61 @@ a {
     }
 
     .hero {
-        min-height: 82svh;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
         padding: 58px 24px 52px;
     }
 
+    .eyebrow {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
     .hero h1 {
-        font-size: 44px;
+        font-size: 40px;
+        line-height: 1.08;
     }
 
     .hero-copy {
         font-size: 18px;
+        margin-top: 22px;
     }
 
     .hero-visual {
-        bottom: 18px;
-        opacity: 0.22;
-        right: -220px;
-        width: 560px;
+        bottom: auto;
+        display: none;
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 34px;
+        max-width: 560px;
+        opacity: 1;
+        position: relative;
+        right: auto;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .console-shell {
+        box-shadow: 0 18px 44px rgba(0, 0, 0, 0.24);
+        min-height: 0;
+    }
+
+    .thread-list {
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .thread {
+        padding: 12px;
+    }
+
+    .insight-row div {
+        padding: 14px 16px;
+    }
+
+    .repo-panel {
+        margin-left: 0;
+        width: 100%;
     }
 
     .integration-strip,
@@ -649,6 +706,7 @@ a {
     }
 
     .asset-showcase {
+        gap: 32px;
         grid-template-columns: 1fr;
         padding: 58px 24px 20px;
     }
@@ -677,5 +735,114 @@ a {
 
     .workflow-item {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .site-header {
+        padding: 12px 18px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .brand-mark {
+        height: 30px;
+        width: 30px;
+    }
+
+    .header-cta {
+        font-size: 14px;
+        min-height: 38px;
+        padding: 0 12px;
+    }
+
+    .hero {
+        padding: 44px 18px 46px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-copy,
+    .intro-copy,
+    .asset-showcase p:last-child,
+    .security-band p,
+    .question-copy p {
+        font-size: 16px;
+    }
+
+    .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .hero-proof {
+        gap: 8px;
+    }
+
+    .hero-proof span {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    .console-topbar {
+        padding: 0 12px;
+    }
+
+    .console-topbar strong {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .insight-row strong {
+        font-size: 22px;
+    }
+
+    .asset-showcase {
+        gap: 28px;
+        padding: 48px 18px 18px;
+    }
+
+    .asset-showcase h2,
+    .section-heading h2,
+    .security-band h2,
+    .question-copy h2,
+    .final-cta h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .section,
+    .security-band,
+    .final-cta {
+        padding: 56px 18px;
+    }
+
+    .capability-card,
+    .deployment-grid article,
+    .question-panel {
+        padding: 20px;
+    }
+
+    .question-panel p {
+        font-size: 17px;
+    }
+
+    .workflow-item {
+        gap: 10px;
+        padding: 22px 0;
+    }
+
+    .security-band {
+        gap: 28px;
     }
 }
