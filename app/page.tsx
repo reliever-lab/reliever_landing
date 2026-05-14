@@ -1,3 +1,5 @@
+import { ContactForm } from "./contact-form";
+
 const integrations = [
   "Slack",
   "GitHub",
@@ -124,7 +126,7 @@ export default function Home() {
           <a href="#security">보안</a>
           <a href="#deployment">배포 방식</a>
         </nav>
-        <a className="header-cta" href="mailto:hello@reliever.ai">
+        <a className="header-cta" href="#contact">
           데모 문의
         </a>
       </header>
@@ -195,7 +197,7 @@ export default function Home() {
             />
           </p>
           <div className="hero-actions">
-            <a className="primary-button" href="mailto:hello@reliever.ai">
+            <a className="primary-button" href="#contact">
               데모 문의
             </a>
             <a className="secondary-button" href="#deployment">
@@ -419,19 +421,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta">
-        <p className="eyebrow">AX 팀을 위한 Reliever</p>
-        <h2>
-          <TextLines
-            lines={[
-              "모든 고객사에 슬랙 안의",
-              "코드베이스 에이전트를 제공합니다.",
-            ]}
-          />
-        </h2>
-        <a className="primary-button" href="mailto:hello@reliever.ai">
-          첫 파일럿 시작하기
-        </a>
+      <section className="section contact-section" id="contact">
+        <div className="contact-copy">
+          <p className="eyebrow">AX 팀을 위한 Reliever</p>
+          <h2>
+            <TextLines
+              lines={[
+                "팀에 필요한 자동화 업무를",
+                "슬랙 기반 파일럿으로 설계합니다.",
+              ]}
+            />
+          </h2>
+          <p>
+            <TextLines
+              lines={[
+                "업종과 팀 규모, 반복되는 업무를 알려주시면",
+                "Reliever 팀이 도입 가능성과 파일럿 범위를 검토해 연락드립니다.",
+              ]}
+            />
+          </p>
+        </div>
+        <ContactForm />
       </section>
     </main>
   );

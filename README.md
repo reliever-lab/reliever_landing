@@ -1,37 +1,47 @@
-# Reliever 랜딩페이지
+# Reliever Landing Page
 
-이 저장소는 기업 코드베이스 인텔리전스를 위한 슬랙 기반 에이전트를 배포하는 AX 기업 Reliever의 Vercel 배포용 Next.js 랜딩페이지입니다.
+This repository contains the Vercel-ready Next.js landing page for Reliever, an AX company that deploys Slack-based agents for enterprise codebase intelligence.
 
-## 기술 스택
+## Tech Stack
 
 - Next.js App Router
 - React
 - TypeScript
-- Reliever 메인 컬러 `#0E4274` 기반의 순수 CSS
+- Plain CSS based on the Reliever primary color `#0E4274`
 
-## 로컬 개발
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-브라우저에서 `http://localhost:3000`을 엽니다.
+Open `http://localhost:3000` in your browser.
 
-## 프로덕션 빌드
+## Environment Variables
+
+Create `.env.local` for local development and set the Slack Incoming Webhook URL used by the demo request form.
+
+```bash
+SLACK_WEBHOOK_URL=<Slack Incoming Webhook URL>
+```
+
+The variable is read only from the server-side route handler and must also be configured in the Vercel project environment before production deployment.
+
+## Production Build
 
 ```bash
 npm run build
 ```
 
-기본 Next.js 프레임워크 프리셋으로 Vercel에 배포할 수 있습니다.
+The app can be deployed to Vercel with the default Next.js framework preset.
 
-## 디자인 리서치
+## Design Research
 
-Lazyweb 리서치 노트와 레퍼런스 파일은 아래 경로에 저장되어 있습니다.
+Lazyweb research notes and reference files are stored under:
 
 ```text
 .lazyweb/design-research/ax-b2b-slack-agent-landing-2026-05-11/
 ```
 
-랜딩페이지 방향은 제품 미리보기, 통합, 보안 신뢰, 데모 중심 전환을 강조하는 B2B 엔터프라이즈 AI 레퍼런스를 바탕으로 구성했습니다.
+The landing page direction emphasizes product preview, integrations, security trust, and demo-oriented conversion based on B2B enterprise AI references.
