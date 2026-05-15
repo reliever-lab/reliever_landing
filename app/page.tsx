@@ -118,7 +118,14 @@ export default function Home() {
     <main>
       <header className="site-header" aria-label="주요 내비게이션">
         <a className="brand" href="#top" aria-label="Reliever 홈">
-          <span className="brand-mark">R</span>
+          <img
+            className="brand-logo"
+            src="/onlyLogo.png"
+            alt=""
+            aria-hidden="true"
+            width="1254"
+            height="1254"
+          />
           <span>Reliever</span>
         </a>
         <nav className="nav-links" aria-label="기본 메뉴">

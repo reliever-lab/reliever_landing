@@ -75,20 +75,18 @@ main {
 }
 
 .brand {
+    color: var(--brand);
     font-size: 18px;
     font-weight: 800;
-    gap: 10px;
+    gap: 0;
 }
 
-.brand-mark {
-    align-items: center;
-    background: var(--brand);
-    border-radius: 6px;
-    color: #fff;
-    display: inline-flex;
-    height: 34px;
-    justify-content: center;
-    width: 34px;
+.brand-logo {
+    display: block;
+    height: 54px;
+    margin-right: -6px;
+    object-fit: contain;
+    width: 54px;
 }
 
 .nav-links {
@@ -834,9 +832,9 @@ main {
         font-size: 16px;
     }
 
-    .brand-mark {
-        height: 30px;
-        width: 30px;
+    .brand-logo {
+        height: 46px;
+        width: 46px;
     }
 
     .header-cta {
